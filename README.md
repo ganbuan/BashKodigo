@@ -1,35 +1,25 @@
 # BashKodigo
 Cheat sheet for common Bash commands 
 
+## Basic Commands
+
 **echo**: Output any provided text
 
 **whoami**: Display current logged user
 
 **man**: command manual
 
-**ls**: listing
+## Interacting w/ the File System
+
+**ls**: listing files in current directory
 
 **ls -a**: listing w/ hidden files
 
 **cd**: change directory
 
-**cat**: concatenate
+**cat**: outputting contents of a file
 
-**pwd:** print working directory 
-
-**find -name**: find a specific file by name
-
-**grep**: search contents of files for specific values 
-
-**&**: run commands in the background
-
-**&&**: combine multiple commands in one line
-
-**\>**: redirector w/ overwrite
-
-**\>\>**: redirector w/ append 
-
-**ssh**: log into remote machine using SSH
+**pwd:** print path to current working directory 
 
 **touch**: create file
 
@@ -43,9 +33,31 @@ Cheat sheet for common Bash commands
 
 **file**: display file type
 
+## Searching for Files
+
+**find -name**: find a specific file by name
+
+**grep**: search contents of files for specific values 
+
+## Shell Operators
+
+**&**: run commands in the background
+
+**&&**: combine multiple commands in one line
+
+**\>**: redirector w/ overwrite
+
+**\>\>**: redirector w/ append 
+
+## Secure Shell
+
+**ssh**: log into remote machine using SSH
+
+## Permissions
+
 **su**: switch user
 
-Common directories:
+## Common Directories
 + **/etc**: system files
 + **/var**: variable data
 + **/root**: home directory for root user
