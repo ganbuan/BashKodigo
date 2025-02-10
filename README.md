@@ -51,15 +51,21 @@ Common directories:
 + **/root**: home directory for root user
 + **/tmp**: temporary files
 
+## Terminal Text Editors
+
 **nano**: terminal text editor
 
 **VIM**: more advanced terminal text editor
+
+## General/Useful Utilities
 
 **wget**: download files via HTTP
 
 **scp**: secure copy via SSH
 
 **python3 -m http.server**: creates web server using local machine
+
+## Processes
 
 **ps**: list running processes by user
 
@@ -83,6 +89,22 @@ Options:
 + **Enable**
 + **Disable**
 
+## Automation
+
+<i>Crontab</i> -> a process that is started during boot that is responsible for facilitating and managing cron jobs
+
+Requires 6 values:
++ MIN: what minute to execute at
++ Hour: what hour to execute at
++ DOM: what day of the month to execute at
++ MON: what month of the year to execute at
++ DOW: what day of the week to execute at
++ CMD: actual command to be executed
+E.g. 0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
+
+**crontab -e**: edit the crontab
+
+## Package Management
 **add-apt-repository**: automatically add a repository
 
 Manually adding a repository:
@@ -95,3 +117,5 @@ Removing packages:
 1. **add-apt-repository --remove ppa:[PPA_Name/ppa]**: remove apt file
 2. **apt remove [software-name-here]**: remove installed software
 
+## Logs
+Logs can be located in /var/log directory.
