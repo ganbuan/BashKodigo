@@ -83,3 +83,15 @@ Options:
 + **Enable**
 + **Disable**
 
+**add-apt-repository**: automatically add a repository
+
+Manually adding a repository:
+1. **wget -qO - [software-gpg-download.gpg] | sudo apt-key add -**: download GPG key and use apt-key to trust it
+2. Add to apt sources list (i.e. create a separate file for the repository)
+3. **apt update**: recognise new entry
+4. **apt install [software-name-here]**: install trusted software
+
+Removing packages:
+1. **add-apt-repository --remove ppa:[PPA_Name/ppa]**: remove apt file
+2. **apt remove [software-name-here]**: remove installed software
+
